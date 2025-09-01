@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>LRV</title>
+    <meta name="description" content="Página da Equipe Foco Digital, especialista em desenvolvimento de software e soluções web.">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <nav class="navegacao container">
+            <a href="#inicio" class="logo">LRV</a>
+            
+            <ul class="menu-navegacao" id="menu-principal">
+                <li class="item-menu"><a href="#sobre" class="link-menu">Sobre</a></li>
+                <li class="item-menu"><a href="#habilidades" class="link-menu">Habilidades</a></li>
+                <li class="item-menu"><a href="#projetos" class="link-menu">Projetos</a></li>
+                <li class="item-menu"><a href="#contato" class="link-menu">Contato</a></li>
+            </ul>
+
+            <button class="menu-hamburguer" id="botao-hamburguer">
+                <span class="barra"></span>
+                <span class="barra"></span>
+                <span class="barra"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="secao-inicio">
+            <div class="container">
+                <h1 class="titulo-principal">LRV</h1>
+                <p class="slogan">Transformando ideias em realidade.</p>
+            </div>
+        </section>
+
+        <section id="sobre" class="secao-sobre">
+            <div class="container">
+                <h2 class="titulo-secao">Sobre a Equipe</h2>
+                <div class="grade-equipe">
+                    <div class="membro-equipe">
+                        <img src="assets/img/integrante1.png" alt="Foto do primeiro integrante da equipe" class="foto-membro">
+                        <h3 class="nome-membro">Luiz Henrique</h3>
+                        <p class="cargo-membro">Cientista de dados</p>
+                    </div>
+                    <div class="membro-equipe">
+                        <img src="img/membro-2.jpg" alt="Foto do segundo integrante da equipe" class="foto-membro">
+                        <h3 class="nome-membro">Vitório</h3>
+                        <p class="cargo-membro">Desenvolvedor Front-End</p>
+                    </div>
+                    <div class="membro-equipe">
+                        <img src="img/membro-2.jpg" alt="Foto do segundo integrante da equipe" class="foto-membro">
+                        <h3 class="nome-membro">Robinson</h3>
+                        <p class="cargo-membro">Desenvolvedor Back-End</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="secao-habilidades">
+            <div class="container">
+                <h2 class="titulo-secao">Habilidades e Tecnologias</h2>
+                <div class="lista-habilidades">
+                    <div class="item-habilidade">HTML5</div>
+                    <div class="item-habilidade">CSS3</div>
+                    <div class="item-habilidade">JavaScript</div>
+                    <div class="item-habilidade">Git</div>
+                    <div class="item-habilidade">SQL</div>
+                    <div class="item-habilidade">Python</div>
+                    <div class="item-habilidade">R</div>
+                    <div class="item-habilidade">SpringBoot</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="secao-projetos">
+            <div class="container">
+                <h2 class="titulo-secao">Projetos</h2>
+                <div class="grade-projetos">
+                    <div class="cartao-projeto">
+                        <img src="assets/img/cafe.jpg" alt="Imagem de um projeto sobre um site de cafeteria" class="imagem-projeto">
+                        <h3 class="titulo-projeto">Site para gerenciamento de cafeteria</h3>
+                        <p class="descricao-projeto">Website institucional para uma cafeteria local, com foco em design responsivo e menu interativo.</p>
+                        <a href="#" class="link-projeto">Ver mais</a>
+                    </div>
+                    <div class="cartao-projeto">
+                        <img src="assets/img/pesquisas.jpg" alt="Imagem de um projeto sobre um site de cafeteria" class="imagem-projeto">
+                        <h3 class="titulo-projeto">Website para o sistema Nupex</h3>
+                        <p class="descricao-projeto">Website institucional para um sistema Nupex, com foco em pesquisas e maior praticidade.</p>
+                        <a href="#" class="link-projeto">Ver mais</a>
+                    </div>
+                    <div class="cartao-projeto">
+                        <img src="assets/img/irrigacao.jpg" alt="Imagem de um projeto sobre um site de cafeteria" class="imagem-projeto">
+                        <h3 class="titulo-projeto">Análise sobre métodos de irrigação</h3>
+                        <p class="descricao-projeto">Análise feita para o trabalho de conclusão de curso, a análise foi realizada na cidade de Cuité-PB .</p>
+                        <a href="#" class="link-projeto">Ver mais</a>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="contato" class="secao-contato">
+            <div class="container">
+                <h2 class="titulo-secao">Contato</h2>
+                <form class="formulario-contato" id="formulario-contato">
+                    <div class="campo-form">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome">
+                        <span class="mensagem-erro"></span>
+                    </div>
+                    <div class="campo-form">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                        <span class="mensagem-erro"></span>
+                    </div>
+                    <div class="campo-form">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="6"></textarea>
+                        <span class="mensagem-erro"></span>
+                    </div>
+                    <button type="submit" class="botao-enviar">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2025 Equipe Foco Digital</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
