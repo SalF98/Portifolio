@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: #f0f0f0; 
+    font-size: 16px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: #ffffff; 
+}
+
+section {
+    padding: 60px 0;
+}
+
+.titulo-secao {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+
+.cabecalho {
+    background-color: #1a1a1a; 
+    border-bottom: 1px solid #333333;
+    padding: 0 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.item-menu {
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.link-menu {
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.link-menu:hover {
+    color: #880000; 
+}
+
+.menu-hamburguer {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.barra {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: #ffffff;
+}
+
+.secao-inicio {
+    background-color: #1a1a1a;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.titulo-principal {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.slogan {
+    font-size: 20px;
+    color: #cccccc; 
+}
+
+.secao-sobre {
+    background-color: #0a0a0a;
+}
+
+.grade-equipe {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; 
+}
+
+.membro-equipe {
+    text-align: center;
+    max-width: 250px;
+}
+
+.foto-membro {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #880000; 
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.nome-membro {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.cargo-membro {
+    color: #cccccc;
+}
+
+.secao-habilidades {
+    background-color: #1a1a1a;
+}
+
+.lista-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.item-habilidade {
+    background-color: #333333; 
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.secao-projetos {
+    background-color: #0a0a0a;
+}
+
+.grade-projetos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cartao-projeto {
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    width: 300px;
+    overflow: hidden; 
+}
+
+.imagem-projeto {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.titulo-projeto {
+    font-size: 20px;
+    padding: 15px;
+    color: #880000; 
+}
+
+.descricao-projeto {
+    padding: 0 15px 15px 15px;
+}
+
+.link-projeto {
+    display: inline-block;
+    margin: 0 15px 15px 15px;
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.secao-contato {
+    background-color: #1a1a1a;
+}
+
+.formulario-contato {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.campo-form {
+    margin-bottom: 20px;
+}
+
+.campo-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.campo-form input,
+.campo-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333333;
+    background-color: #0a0a0a;
+    color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.mensagem-erro {
+    color: #880000;
+    font-size: 14px;
+    display: block;
+    height: 16px; 
+    margin-top: 5px;
+}
+
+.botao-enviar {
+    background-color: #880000; 
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.botao-enviar:hover {
+    background-color: #660000;
+}
+
+.rodape {
+    background-color: #0a0a0a;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #333333;
+}
+
+@media (max-width: 768px) {
+    .menu-hamburguer {
+        display: block; 
+    }
+
+    .menu-navegacao {
+        display: flex; 
+        position: fixed; 
+        flex-direction: column;
+        text-align: center;
+        background-color: #1a1a1a;
+        top: 70px; 
+        left: -100%; 
+        width: 100%;
+        height: calc(100vh - 70px); 
+        transition: left 0.3s ease-in-out; 
+    }
+
+    .menu-navegacao.ativo {
+        left: 0; 
+    }
+
+    .item-menu {
+        margin: 0;
+        width: 100%;
+        border-bottom: 1px solid #333333;
+    }
+    
+    .item-menu:last-child {
+        border-bottom: none;
+    }
+
+    .link-menu {
+        display: block;
+        padding: 20px;
+    }
+}
