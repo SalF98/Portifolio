@@ -1,9 +1,11 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Rolagem suave */
 html {
     scroll-behavior: smooth;
 }
@@ -11,18 +13,20 @@ html {
 body {
     font-family: Arial, sans-serif;
     background-color: #0a0a0a;
-    color: #f0f0f0; 
+    color: #f0f0f0;
     font-size: 16px;
 }
 
+/* Container centralizado */
 .container {
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
 }
 
+/* Títulos das seções */
 h1, h2, h3 {
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 section {
@@ -35,9 +39,9 @@ section {
     margin-bottom: 40px;
 }
 
-
+/* Cabeçalho fixo */
 .cabecalho {
-    background-color: #1a1a1a; 
+    background-color: #1a1a1a;
     border-bottom: 1px solid #333333;
     padding: 0 20px;
     position: fixed;
@@ -46,6 +50,7 @@ section {
     z-index: 100;
 }
 
+/* Navegação */
 .navegacao {
     display: flex;
     justify-content: space-between;
@@ -73,9 +78,10 @@ section {
 }
 
 .link-menu:hover {
-    color: #880000; 
+    color: #880000;
 }
 
+/* Ícone de menu (aparece no mobile) */
 .menu-hamburguer {
     display: none;
     background: none;
@@ -91,6 +97,7 @@ section {
     background-color: #ffffff;
 }
 
+/* Seção inicial */
 .secao-inicio {
     background-color: #1a1a1a;
     height: 100vh;
@@ -107,18 +114,20 @@ section {
 
 .slogan {
     font-size: 20px;
-    color: #cccccc; 
+    color: #cccccc;
 }
 
+/* Seção sobre */
 .secao-sobre {
     background-color: #0a0a0a;
 }
 
+/* Equipe */
 .grade-equipe {
     display: flex;
     justify-content: center;
     gap: 40px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .membro-equipe {
@@ -130,7 +139,7 @@ section {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 3px solid #880000; 
+    border: 3px solid #880000;
     object-fit: cover;
     margin-bottom: 15px;
 }
@@ -156,7 +165,7 @@ section {
 }
 
 .item-habilidade {
-    background-color: #333333; 
+    background-color: #333333;
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -174,12 +183,13 @@ section {
     flex-wrap: wrap;
 }
 
+/* Cartões de projeto */
 .cartao-projeto {
     background-color: #1a1a1a;
     border: 1px solid #333333;
     border-radius: 5px;
     width: 300px;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .imagem-projeto {
@@ -191,7 +201,7 @@ section {
 .titulo-projeto {
     font-size: 20px;
     padding: 15px;
-    color: #880000; 
+    color: #880000;
 }
 
 .descricao-projeto {
@@ -234,16 +244,17 @@ section {
     border-radius: 5px;
 }
 
+/* Mensagem de erro */
 .mensagem-erro {
     color: #880000;
     font-size: 14px;
     display: block;
-    height: 16px; 
+    height: 16px;
     margin-top: 5px;
 }
 
 .botao-enviar {
-    background-color: #880000; 
+    background-color: #880000;
     color: #ffffff;
     border: none;
     padding: 12px 25px;
@@ -263,26 +274,30 @@ section {
     border-top: 1px solid #333333;
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
+
+    /* Mostra o ícone de menu */
     .menu-hamburguer {
-        display: block; 
+        display: block;
     }
 
+    /* Menu lateral no mobile */
     .menu-navegacao {
-        display: flex; 
-        position: fixed; 
+        display: flex;
+        position: fixed;
         flex-direction: column;
         text-align: center;
         background-color: #1a1a1a;
-        top: 70px; 
-        left: -100%; 
+        top: 70px;
+        left: -100%;
         width: 100%;
-        height: calc(100vh - 70px); 
-        transition: left 0.3s ease-in-out; 
+        height: calc(100vh - 70px);
+        transition: left 0.3s ease-in-out;
     }
 
     .menu-navegacao.ativo {
-        left: 0; 
+        left: 0;
     }
 
     .item-menu {
@@ -290,7 +305,7 @@ section {
         width: 100%;
         border-bottom: 1px solid #333333;
     }
-    
+
     .item-menu:last-child {
         border-bottom: none;
     }
