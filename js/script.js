@@ -4,10 +4,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuPrincipal = document.getElementById('menu-principal');
     const linksDoMenu = document.querySelectorAll('.link-menu'); 
 
+    //fecha e abre o menu clicando no botão
     botaoHamburguer.addEventListener('click', function() {
         menuPrincipal.classList.toggle('ativo');
     });
 
+    //o menu é fechado quando uma opção é selecionada
     linksDoMenu.forEach(function(link) {
         link.addEventListener('click', function() {
             menuPrincipal.classList.remove('ativo');
@@ -16,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const form = document.getElementById('formulario-contato');
     
+    //valida os dados quando o usuário envia o formulário
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         const campoNome = document.getElementById('nome');
@@ -48,11 +51,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    //função para exibir mensagem de erro do formulário
     function mostrarErro(campo, mensagem) {
         const spanErro = campo.nextElementSibling;
         spanErro.textContent = mensagem;
     }
 
+    //fução para limpar mensagens de erro do formulário
     function limparErro(campo) {
         const spanErro = campo.nextElementSibling;
         spanErro.textContent = '';
