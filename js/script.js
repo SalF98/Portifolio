@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const botaoHamburguer = document.getElementById('botao-hamburguer');
     const menuPrincipal = document.getElementById('menu-principal');
-    const linksDoMenu = document.querySelectorAll('link-menu'); 
+    const linksDoMenu = document.querySelectorAll('.link-menu'); 
 
     botaoHamburguer.addEventListener('click', function() {
         menuPrincipal.classList.toggle('ativo');
